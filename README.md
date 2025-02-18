@@ -1,5 +1,5 @@
-# Project History
-Below are selected projects done by Yuning (from the most recent to the earliest).
+# Project Experience
+Below are selected projects completed by Yuning (from the most recent to the earliest).
 
 ## Liquidity Saving Mechanism for Cross-Border Payment Systems
 Developed cross-border liquidity saving mechanisms using Integer Linear Programming and multi-objective optimization. Given minimum liquidity required to settle all payments (net liquidity requirement), reducing delays of settling cross-border payments between banks by 70% and ensuring full settlement.
