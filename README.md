@@ -1,6 +1,9 @@
 # Project Experience
 Below are selected projects completed by Yuning (from the most recent to the earliest).
 
+## AutoRuleMiner: Automated Rule Discovery for Credit Risk Control
+Developed an automated rule mining and selection framework for credit risk strategy design using greedy OR-union optimization and Lift-driven filtering. Given a target bad rate baseline, the system discovers high-Lift threshold rules from numeric variables and generates interpretable conjunction rules via RandomForest/DecisionTree path extraction, reducing manual rule exploration effort by 90% while ensuring statistical significance and out-of-time stability.
+
 ## Liquidity Saving Mechanism for Cross-Border Payment Systems
 Developed cross-border liquidity saving mechanisms using Integer Linear Programming and multi-objective optimization. Given minimum liquidity required to settle all payments (net liquidity requirement), reducing delays of settling cross-border payments between banks by 70% and ensuring full settlement.
 
