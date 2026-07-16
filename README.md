@@ -1,5 +1,5 @@
 # Project Experience
-Below are selected projects completed by Yuning (from the most recent to the earliest).
+Below is a selection of projects I've built and am continuing to refine, ordered from most recent to earliest.
 
 ## AutoRuleMiner: Automated Rule Discovery for Credit Risk Control
 Developed an automated rule mining and selection framework for credit risk strategy design using greedy OR-union optimization and Lift-driven filtering. Given a target bad rate baseline, the system discovers high-Lift threshold rules from numeric variables and generates interpretable conjunction rules via RandomForest/DecisionTree path extraction, reducing manual rule exploration effort by 90% while ensuring statistical significance and out-of-time stability.
