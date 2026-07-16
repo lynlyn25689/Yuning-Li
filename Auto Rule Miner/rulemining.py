@@ -1,7 +1,6 @@
 """
 RuleMiner: Automated Rule Discovery with Greedy Selection
 
-KEY HIGHLIGHTS:
 1. Iterative Decision Tree mining with feature dropout (generates diverse rules)
 2. Greedy OR-Union selection with Lift confidence intervals
 3. Train/OOT validation with incremental coverage constraints
@@ -105,18 +104,6 @@ def generate_dt_rules(
 ) -> pd.DataFrame:
     """
     Generate candidate rules using iterative DecisionTree with feature dropout.
-    
-    KEY INSIGHT: By removing the most important feature after each iteration,
-    we force the model to explore different feature combinations, producing
-    diverse and interpretable rules.
-    
-    Example:
-        Iteration 1: Tree uses 'income' as root → generates rules with income
-        Remove 'income' from feature pool
-        Iteration 2: Tree uses 'debt_ratio' as root → generates rules with debt_ratio
-        Remove 'debt_ratio' from feature pool
-        Iteration 3: Tree uses 'age' as root → generates rules with age
-        ...
     """
     df = train.copy()
     X = df[feature_cols].copy().fillna(df[feature_cols].median())
@@ -270,8 +257,6 @@ def greedy_select_rules(
 ) -> SelectionResult:
     """
     Greedy OR-Union selection with incremental constraints.
-    
-    KEY INSIGHTS:
     1. Each rule must improve portfolio lift on BOTH train and OOT
     2. Incremental coverage ensures each rule adds new samples
     3. Lift confidence intervals prevent small-sample overfitting
