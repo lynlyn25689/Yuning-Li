@@ -1,6 +1,9 @@
 # Project Experience
 Below is a selection of projects I've built and am continuing to refine, ordered from most recent to earliest.
 
+## Mixscore Optimizer
+This is an automated R framework that discovers optimal weighted combinations of risk sub-scores for credit scoring. It leverages logistic regression coefficients as a heuristic to guide brute-force weight exploration, then evaluates each blend using KS, AUC, lift stability, and monotonicity across multiple delinquency horizons. Critically, the framework evaluates risk at both the account-level (volume) and loan-amount level (exposure), ensuring that the final score captures not only discrimination power but also robust ordering across different risk segments.
+
 ## AutoRuleMiner: Automated Rule Discovery for Credit Risk Control
 Developed an automated rule mining and selection framework for credit risk strategy design using greedy OR-union optimization and Lift-driven filtering. Given a target bad rate baseline, the system discovers high-Lift threshold rules from numeric variables and generates interpretable conjunction rules via RandomForest/DecisionTree path extraction, reducing manual rule exploration effort by 90% while ensuring statistical significance and out-of-time stability.
 
